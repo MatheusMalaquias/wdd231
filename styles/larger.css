@@ -1,8 +1,12 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width:768px){
+
+/* hide hamburger */
 
 #menuButton{
 display:none;
 }
+
+/* navigation horizontal */
 
 nav{
 display:block;
@@ -11,6 +15,16 @@ display:block;
 nav ul{
 display:flex;
 }
+
+nav li{
+border:none;
+}
+
+nav a{
+padding:1rem;
+}
+
+/* layout sections */
 
 .top-sections{
 flex-direction:row;
@@ -24,8 +38,17 @@ flex:2;
 flex:1;
 }
 
+/* courses grid */
+
 #courses{
 grid-template-columns:repeat(3,1fr);
+max-width:800px;
+margin:auto;
+}
+
+.buttons{
+max-width:600px;
+margin:auto;
 }
 
 }
