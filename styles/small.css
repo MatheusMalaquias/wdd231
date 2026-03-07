@@ -1,0 +1,102 @@
+body{
+font-family: Arial, sans-serif;
+margin:0;
+}
+
+header{
+display:flex;
+align-items:center;
+gap:10px;
+padding:10px;
+background:#ddd;
+}
+
+nav{
+background:#111;
+display:none;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav a{
+display:block;
+padding:10px;
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{
+background:#444;
+}
+
+.show{
+display:block;
+}
+
+main{
+padding:10px;
+}
+
+.top-sections{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+section{
+border:1px solid #ccc;
+}
+
+section h2{
+background:#222;
+color:white;
+padding:5px;
+margin:0;
+text-align:center;
+}
+
+.about p{
+padding:10px;
+}
+
+.photo img{
+width:100%;
+max-width:200px;
+display:block;
+margin:10px auto;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+justify-content:center;
+margin:10px 0;
+}
+
+#courses{
+display:grid;
+gap:10px;
+grid-template-columns:1fr;
+}
+
+.course{
+padding:10px;
+background:#ddd;
+text-align:center;
+}
+
+.completed{
+background:#444;
+color:white;
+}
+
+footer{
+text-align:center;
+margin-top:20px;
+padding:10px;
+background:#eee;
+}
