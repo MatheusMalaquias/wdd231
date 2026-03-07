@@ -85,7 +85,7 @@ margin:1rem 0;
 .top-sections{
 display:flex;
 flex-direction:column;
-gap:1rem;
+margin-bottom:1rem;
 }
 
 section{
@@ -123,17 +123,12 @@ margin-top:1rem;
 .buttons{
 display:flex;
 justify-content:center;
-gap:10px;
 margin:1rem 0;
 flex-wrap:wrap;
 }
 
 .buttons button{
-padding:0.5rem 1rem;
-border:1px solid #aaa;
-background:#eee;
-cursor:pointer;
-font-weight:600;
+margin:5px;
 }
 
 .buttons button:hover{
@@ -194,4 +189,9 @@ color:#222;
 
 .social a:hover{
 text-decoration:underline;
+}
+
+img{
+max-width:100%;
+height:auto;
 }
