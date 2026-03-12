@@ -1,0 +1,60 @@
+body{
+font-family:Roboto;
+margin:0;
+}
+
+header{
+display:flex;
+align-items:center;
+padding:1rem;
+background:#003366;
+color:white;
+}
+
+nav ul{
+list-style:none;
+padding:0;
+display:none;
+}
+
+nav.open ul{
+display:block;
+}
+
+main{
+padding:1rem;
+}
+
+.view-buttons{
+margin-bottom:1rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr;
+gap:1rem;
+}
+
+.grid section{
+border:1px solid #ccc;
+padding:1rem;
+text-align:center;
+}
+
+.grid img{
+width:100%;
+height:auto;
+}
+
+.list section{
+display:block;
+border-bottom:1px solid #ccc;
+padding:1rem;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:1rem;
+}

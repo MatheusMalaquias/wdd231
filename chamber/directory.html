@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Matheus O. Malaquias">
+    <meta name="description" content="Business directory of the Juiz de Fora Chamber of Commerce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juiz de Fora Chamber Directory</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="Juiz de Fora Chamber of Commerce">
+    <meta property="og:description" content="Local business directory and chamber information">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="./scripts/directory.js" defer></script>
+    <script src="./data/members.json" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Chamber Logo" width="40">
+        <span>Juiz de Fora Chamber</span>
+        <button id="menuButton">☰</button>
+    </header>
+    
+    <nav id="navMenu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h1>Business Directory</h1>
+        <div class="view-buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        
+        <div id="members" class="grid"></div>
+    </main>
+    
+    <footer>
+        <p>Contact: contact@jfchamber.org | +55(32)99139-6384</p>
+        <p>© <span id="year"></span> | Matheus O. Malaquias | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,58 @@
+[
+{
+"name":"Tech Solutions",
+"address":"123 Main Street",
+"phone":"+55 32 99999-1111",
+"website":"https://techsolutions.com",
+"image":"tech.jpg",
+"membership":3
+},
+{
+"name":"Cafe Central",
+"address":"456 Coffee Ave",
+"phone":"+55 32 99999-2222",
+"website":"https://cafecentral.com",
+"image":"cafe.jpg",
+"membership":2
+},
+{
+"name":"Super Market JF",
+"address":"789 Market Street",
+"phone":"+55 32 99999-3333",
+"website":"https://marketjf.com",
+"image":"market.jpg",
+"membership":1
+},
+{
+"name":"Fit Gym",
+"address":"101 Fitness Ave",
+"phone":"+55 32 99999-4444",
+"website":"https://fitgym.com",
+"image":"gym.jpg",
+"membership":2
+},
+{
+"name":"Banco Central JF",
+"address":"202 Bank Street",
+"phone":"+55 32 99999-5555",
+"website":"https://bankjf.com",
+"image":"bank.jpg",
+"membership":3
+},
+{
+"name":"Future School",
+"address":"303 Education Rd",
+"phone":"+55 32 99999-6666",
+"website":"https://futureschool.com",
+"image":"school.jpg",
+"membership":2
+},
+{
+"name":"Grand Hotel JF",
+"address":"404 Tourism Blvd",
+"phone":"+55 32 99999-7777",
+"website":"https://grandhotel.com",
+"image":"hotel.jpg",
+"membership":3
+}
+]
