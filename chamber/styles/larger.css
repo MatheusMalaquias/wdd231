@@ -10,3 +10,7 @@ grid-template-columns:repeat(3,1fr);
 }
 
 }
+
+body{
+font-family: 'Roboto', sans-serif;
+}
