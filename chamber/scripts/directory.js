@@ -1,5 +1,6 @@
 const url = "data/members.json";
-const membersContainer = document.querySelector("#members");
+
+const container = document.querySelector("#members");
 
 async function getMembers() {
 
@@ -15,17 +16,23 @@ function displayMembers(members){
 
 members.forEach(member => {
 
-let card = document.createElement("section");
+const card = document.createElement("section");
 
 card.innerHTML = `
+
 <img src="images/${member.image}" alt="${member.name}">
+
 <h3>${member.name}</h3>
+
 <p>${member.address}</p>
+
 <p>${member.phone}</p>
-<a href="${member.website}" target="_blank">Visit Website</a>
+
+<a href="${member.website}" target="_blank">${member.website}</a>
+
 `;
 
-membersContainer.appendChild(card);
+container.appendChild(card);
 
 });
 
@@ -40,16 +47,16 @@ const listButton = document.querySelector("#list");
 
 gridButton.addEventListener("click", () => {
 
-membersContainer.classList.add("grid");
+container.classList.add("grid");
 
-membersContainer.classList.remove("list");
+container.classList.remove("list");
 
 });
 
 listButton.addEventListener("click", () => {
 
-membersContainer.classList.add("list");
+container.classList.add("list");
 
-membersContainer.classList.remove("grid");
+container.classList.remove("grid");
 
 });

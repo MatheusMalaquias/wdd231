@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Matheus O. Malaquias">
-    <meta name="description" content="Business directory of the Juiz de Fora Chamber of Commerce">
+    <meta name="description" content="Explore the Juiz de Fora Chamber of Commerce directory and discover trusted local businesses and services.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juiz de Fora Chamber Directory</title>
-    <link rel="icon" href="images/favicon.ico">
+    <title>Chamber Business Directory</title>
+    <link rel="icon" href="images/logo.png">
     <meta property="og:title" content="Juiz de Fora Chamber of Commerce">
-    <meta property="og:description" content="Explore the Juiz de Fora Chamber of Commerce directory and discover trusted local businesses, services, and community partners.">
-    <meta property="og:image" content="https://matheusmalaquias.github.io/wdd231/chamber/images/chamber-social.jpg">
-    <meta property="og:url" content="https://yourdomain.com/chamber/directory.html">
-    <link rel="stylesheet" href="./styles/small.css">
-    <link rel="stylesheet" href="./styles/larger.css">
+    <meta property="og:description" content="Explore the Juiz de Fora Chamber of Commerce directory and discover trusted local businesses and services.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://matheusmalaquias.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="https://matheusmalaquias.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
-    <script src="./data/members.json" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 
 <body>
     <header>
         <img src="./images/matheus-malaquias.jpg" alt="Chamber Logo" width="40">
-        <span>Juiz de Fora Chamber</span>
+        <h2>Juiz de Fora Chamber</h2>
         <button id="menuButton">☰</button>
     </header>
     
@@ -39,18 +39,19 @@
     
     <main>
         <h1>Business Directory</h1>
-        <div class="view-buttons">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+        <div class="view-buttons">    
+            <button id="grid">🔲 Grid</button>
+            <button id="list">☰ List</button>
         </div>
         
         <div id="members" class="grid"></div>
     </main>
     
     <footer>
-        <p>Contact: contact@jfchamber.org | +55(32)99139-6384</p>
+        <p>Contact: mateusotavio614@gmail.com | +55(32)99139-6384</p>
         <p>© <span id="year"></span> | Matheus O. Malaquias | WDD 231</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 </html>

@@ -1,58 +1,64 @@
 [
 {
-"name":"Tech Solutions",
-"address":"123 Main Street",
-"phone":"+55 32 99999-1111",
-"website":"https://techsolutions.com",
-"image":"tech.jpg",
+"name":"Idaho Websites",
+"address":"2115 S Vista Avenue Boise ID 83705",
+"phone":"(208) 342-9386",
+"website":"https://idahowebsites.com",
+"image":"company1.png",
 "membership":3
 },
+
 {
-"name":"Cafe Central",
-"address":"456 Coffee Ave",
-"phone":"+55 32 99999-2222",
-"website":"https://cafecentral.com",
-"image":"cafe.jpg",
+"name":"Surge Web Design",
+"address":"4072 E Arch Drive Meridian ID 83646",
+"phone":"(208) 631-0640",
+"website":"https://surgewebdesign.com",
+"image":"company2.png",
 "membership":2
 },
+
 {
-"name":"Super Market JF",
-"address":"789 Market Street",
-"phone":"+55 32 99999-3333",
-"website":"https://marketjf.com",
-"image":"market.jpg",
+"name":"Graphiczen",
+"address":"1788 E Summerplace Court Meridian ID 83646",
+"phone":"(208) 631-4984",
+"website":"https://graphiczen.com",
+"image":"company3.png",
 "membership":1
 },
+
 {
-"name":"Fit Gym",
-"address":"101 Fitness Ave",
-"phone":"+55 32 99999-4444",
-"website":"https://fitgym.com",
-"image":"gym.jpg",
+"name":"Peppershock Media",
+"address":"1215 3rd Street Nampa ID 83651",
+"phone":"(208) 461-5070",
+"website":"https://peppershock.com",
+"image":"company4.png",
 "membership":2
 },
+
 {
-"name":"Banco Central JF",
-"address":"202 Bank Street",
-"phone":"+55 32 99999-5555",
-"website":"https://bankjf.com",
-"image":"bank.jpg",
+"name":"Flash Tech Services",
+"address":"Star Idaho 83669",
+"phone":"(208) 488-5810",
+"website":"https://flashtechservices.com",
+"image":"company5.png",
 "membership":3
 },
+
 {
-"name":"Future School",
-"address":"303 Education Rd",
-"phone":"+55 32 99999-6666",
-"website":"https://futureschool.com",
-"image":"school.jpg",
+"name":"Metro Express",
+"address":"1725 E Overland Road Meridian ID 83642",
+"phone":"(208) 888-4073",
+"website":"https://metroexpress.com",
+"image":"company6.png",
+"membership":1
+},
+
+{
+"name":"Roaring Springs",
+"address":"400 W Overland Rd Meridian ID",
+"phone":"(208) 884-8842",
+"website":"https://roaringsprings.com",
+"image":"company7.png",
 "membership":2
-},
-{
-"name":"Grand Hotel JF",
-"address":"404 Tourism Blvd",
-"phone":"+55 32 99999-7777",
-"website":"https://grandhotel.com",
-"image":"hotel.jpg",
-"membership":3
 }
 ]
