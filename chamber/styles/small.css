@@ -67,3 +67,25 @@ color:white;
 text-align:center;
 padding:1rem;
 }
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.cta {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+.spotlights {
+    display: grid;
+    gap: 1rem;
+}
