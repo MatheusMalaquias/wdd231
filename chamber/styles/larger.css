@@ -1,32 +1,28 @@
 @media (min-width: 768px) {
 
-    /* NAV */
     nav ul {
         display: flex;
         gap: 2rem;
     }
 
-    /* HOME GRID (igual ao wireframe) */
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         gap: 1rem;
     }
 
-    /* SPOTLIGHTS */
     .spotlights {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* DIRECTORY */
     .grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
     footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: center;
     }
 }

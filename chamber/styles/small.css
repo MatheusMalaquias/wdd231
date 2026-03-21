@@ -51,7 +51,7 @@ main {
     border-radius: 5px;
 }
 
-/* HOME GRID (Events + Weather) */
+/* HOME GRID */
 .home-grid {
     display: block;
 }
@@ -82,48 +82,34 @@ main {
     gap: 1rem;
 }
 
+.spotlights h2 {
+    margin-bottom: 1rem;
+}
+
 .spotlights div {
-    background: white;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    align-items: center;
+    text-align: left;
+    background: #ddd;
     padding: 1rem;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
 .spotlights img {
-    width: 100px;
-    margin: 0.5rem auto;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
 }
 
-/* DIRECTORY (já existente) */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+.spotlights h3 {
+    margin: 0;
 }
 
-.grid section {
-    background: white;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.grid img {
-    width: 120px;
-    margin: auto;
-}
-
-.list section {
-    display: grid;
-    grid-template-columns: 2fr 3fr 2fr 3fr;
-    padding: 1rem;
-    background: #dfeff2;
-    border-bottom: 1px solid #ccc;
-}
-
-.list img {
-    display: none;
+.spotlights div div {
+    border-top: 1px solid #999;
+    padding-top: 0.5rem;
 }
 
 /* FOOTER */
@@ -137,6 +123,27 @@ footer div {
     margin-bottom: 1rem;
 }
 
-h1 {
-    margin-bottom: 1rem;
+.footer-center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-center img {
+    width: 40px;
+    height: 40px;
+}
+
+/* DIRECTORY (mantido) */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 3fr;
+    padding: 1rem;
+    background: #dfeff2;
 }

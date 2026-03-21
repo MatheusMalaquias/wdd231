@@ -4,26 +4,37 @@ async function loadSpotlights() {
     const response = await fetch(url);
     const data = await response.json();
 
-    const filtered = data.members.filter(m =>
-        m.membership === "Gold" || m.membership === "Silver"
+    const container = document.getElementById("spotlight-container");
+
+    // limpa antes
+    container.innerHTML = "";
+
+    // filtra gold e silver
+    const filtered = data.members.filter(member =>
+        member.membership === "Gold" || member.membership === "Silver"
     );
 
+    // embaralha
     const shuffled = filtered.sort(() => 0.5 - Math.random());
 
+    // pega 3
     const selected = shuffled.slice(0, 3);
-
-    const container = document.getElementById("spotlight-container");
 
     selected.forEach(member => {
         const card = document.createElement("div");
 
         card.innerHTML = `
-            <h3>${member.name}</h3>
             <img src="${member.logo}" alt="${member.name}">
-            <p>${member.phone}</p>
-            <p>${member.address}</p>
-            <a href="${member.website}" target="_blank">Visit</a>
-            <p>${member.membership}</p>
+            <div>
+                <h3>${member.name}</h3>
+                <p><strong>EMAIL:</strong> ${member.email}</p>
+                <p><strong>PHONE:</strong> ${member.phone}</p>
+                <p><strong>URL:</strong> 
+                    <a href="${member.website}" target="_blank">
+                        Visit Site
+                    </a>
+                </p>
+            </div>
         `;
 
         container.appendChild(card);
@@ -31,13 +42,3 @@ async function loadSpotlights() {
 }
 
 loadSpotlights();
-
-card.innerHTML = `
-    <img src="${member.logo}" alt="${member.name}">
-    <div>
-        <h3>${member.name}</h3>
-        <p><strong>EMAIL:</strong> ${member.email}</p>
-        <p><strong>PHONE:</strong> ${member.phone}</p>
-        <p><strong>URL:</strong> ${member.website}</p>
-    </div>
-`;
