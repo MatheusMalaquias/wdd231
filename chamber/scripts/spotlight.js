@@ -31,3 +31,13 @@ async function loadSpotlights() {
 }
 
 loadSpotlights();
+
+card.innerHTML = `
+    <img src="${member.logo}" alt="${member.name}">
+    <div>
+        <h3>${member.name}</h3>
+        <p><strong>EMAIL:</strong> ${member.email}</p>
+        <p><strong>PHONE:</strong> ${member.phone}</p>
+        <p><strong>URL:</strong> ${member.website}</p>
+    </div>
+`;

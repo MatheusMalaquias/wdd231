@@ -1,91 +1,138 @@
-body{
-font-family: 'Roboto', sans-serif;
-margin:0;
-background:#f4f4f4;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #f4f4f4;
 }
 
-header{
-display:flex;
-align-items:center;
-justify-content:space-between;
-background:#003366;
-color:white;
-padding:1rem;
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #003366;
+    color: white;
+    padding: 1rem;
 }
 
-nav ul{
-list-style:none;
-padding:0;
-display:none;
+/* NAV */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: none;
 }
 
-nav.open ul{
-display:block;
+nav.open ul {
+    display: block;
 }
 
-main{
-padding:1rem;
+/* MAIN */
+main {
+    padding: 1rem;
 }
 
-.view-buttons{
-margin-bottom:1rem;
-}
-
-.grid{
-display:grid;
-grid-template-columns:1fr;
-gap:1.5rem;
-}
-
-.grid section{
-background:white;
-padding:1rem;
-text-align:center;
-box-shadow:0 4px 8px rgba(0,0,0,0.2);
-}
-
-.grid img{
-width:120px;
-margin:auto;
-}
-
-.list section{
-display:grid;
-grid-template-columns:2fr 3fr 2fr 3fr;
-padding:1rem;
-background:#dfeff2;
-border-bottom:1px solid #ccc;
-}
-
-.list img{
-display:none;
-}
-
-footer{
-background:#003366;
-color:white;
-text-align:center;
-padding:1rem;
-}
-
+/* HERO */
 .hero {
     position: relative;
 }
 
 .hero img {
     width: 100%;
+    display: block;
 }
 
 .cta {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background: #333;
+    background: #003366;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
+/* HOME GRID (Events + Weather) */
+.home-grid {
+    display: block;
+}
+
+.home-grid div {
+    margin-bottom: 1rem;
+}
+
+.events,
+.weather,
+.forecast {
+    background: #ddd;
+    padding: 1rem;
+}
+
+.events h2,
+.weather h2,
+.forecast h2 {
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    margin: -1rem -1rem 1rem -1rem;
+}
+
+/* SPOTLIGHTS */
 .spotlights {
     display: grid;
     gap: 1rem;
+}
+
+.spotlights div {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.spotlights img {
+    width: 100px;
+    margin: 0.5rem auto;
+}
+
+/* DIRECTORY (já existente) */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.grid section {
+    background: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.grid img {
+    width: 120px;
+    margin: auto;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 3fr;
+    padding: 1rem;
+    background: #dfeff2;
+    border-bottom: 1px solid #ccc;
+}
+
+.list img {
+    display: none;
+}
+
+/* FOOTER */
+footer {
+    background: #003366;
+    color: white;
+    padding: 1rem;
+}
+
+footer div {
+    margin-bottom: 1rem;
 }
