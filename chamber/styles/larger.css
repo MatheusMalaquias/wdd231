@@ -25,4 +25,17 @@
         align-items: center;
         text-align: center;
     }
+
+    .join-container {
+    flex-direction: row;
+    align-items: flex-start;
+    }
+
+    .form-section {
+        flex: 2;
+    }
+
+    .cards {
+        flex: 1;
+    }
 }

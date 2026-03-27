@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Chamber</title>
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+<header>
+  <h1>Timbuktu Chamber of Commerce</h1>
+</header>
+
+<main class="join-container">
+
+  <section class="form-section">
+    <h2>Join the Chamber</h2>
+
+    <form method="get" action="thankyou.html">
+
+      <label>
+        First Name:
+        <input type="text" name="fname" required title="Enter your first name" autocomplete="given-name">
+      </label>
+
+      <label>
+        Last Name:
+        <input type="text" name="lname" required title="Enter your last name" autocomplete="family-name">
+      </label>
+
+      <label>
+        Organizational Title:
+        <input type="text" name="orgtitle"
+          title="Minimum 7 characters, letters, hyphens and spaces only"
+          autocomplete="organization-title"
+          pattern="[A-Za-z\s\-]{7,}">
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" required
+          title="Enter a valid email"
+          placeholder="example@email.com"
+          autocomplete="email">
+      </label>
+
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" required
+          title="Enter your phone number"
+          autocomplete="tel">
+      </label>
+
+      <label>
+        Business Name:
+        <input type="text" name="business" required
+          title="Enter your business name"
+          autocomplete="organization">
+      </label>
+
+      <label>
+        Membership Level:
+        <select name="membership" required>
+          <option value="">Select one</option>
+          <option value="np">NP Membership (Free)</option>
+          <option value="bronze">Bronze</option>
+          <option value="silver">Silver</option>
+          <option value="gold">Gold</option>
+        </select>
+      </label>
+
+      <label>
+        Business Description:
+        <textarea name="description" title="Describe your business"></textarea>
+      </label>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      <input type="submit" value="Apply Now">
+
+    </form>
+  </section>
+
+  <aside class="cards">
+    <div class="card">
+      <h3>NP Membership</h3>
+      <a href="#" onclick="openModal('npModal')">Learn More</a>
+    </div>
+
+    <div class="card">
+      <h3>Bronze</h3>
+      <a href="#" onclick="openModal('bronzeModal')">Learn More</a>
+    </div>
+
+    <div class="card">
+      <h3>Silver</h3>
+      <a href="#" onclick="openModal('silverModal')">Learn More</a>
+    </div>
+
+    <div class="card">
+      <h3>Gold</h3>
+      <a href="#" onclick="openModal('goldModal')">Learn More</a>
+    </div>
+  </aside>
+
+</main>
+
+<div id="npModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('npModal')">&times;</span>
+    <h2>NP Membership</h2>
+    <p>Free for nonprofits. Includes basic directory listing.</p>
+  </div>
+</div>
+
+<div id="bronzeModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('bronzeModal')">&times;</span>
+    <h2>Bronze</h2>
+    <p>Basic advertising + event access.</p>
+  </div>
+</div>
+
+<div id="silverModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('silverModal')">&times;</span>
+    <h2>Silver</h2>
+    <p>Training, discounts, and spotlight features.</p>
+  </div>
+</div>
+
+<div id="goldModal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal('goldModal')">&times;</span>
+    <h2>Gold</h2>
+    <p>Premium advertising, homepage spotlight, VIP events.</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; Chamber</p>
+</footer>
+
+<script src="./scripts/join.js"></script>
+</body>
+</html>
