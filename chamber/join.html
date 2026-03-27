@@ -3,14 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Chamber</title>
-  <link rel="stylesheet" href="styles/small.css">
-  <link rel="stylesheet" href="styles/larger.css">
+  <title>Join Timbuktu Chamber of Commerce</title>
+  <meta name="description" content="Apply to join the Timbuktu Chamber of Commerce and explore membership benefits for your business growth.">
+  <meta name="author" content="Matheus Malaquias">
+  <meta property="og:title" content="Join Timbuktu Chamber of Commerce">
+  <meta property="og:description" content="Become a member and grow your business with exclusive benefits and opportunities.">
+  <meta property="og:image" content="https://yourdomain.com/images/chamber.jpg">
+  <meta property="og:url" content="https://matheusmalaquias.github.io/chamber/join.html">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/small.css">
+  <link rel="stylesheet" href="./styles/larger.css">
 </head>
 
 <body>
+
 <header>
   <h1>Timbuktu Chamber of Commerce</h1>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="thankyou.html"></a></li>
+    </ul>
+  </nav>
 </header>
 
 <main class="join-container">
@@ -65,9 +85,9 @@
         <select name="membership" required>
           <option value="">Select one</option>
           <option value="np">NP Membership (Free)</option>
-          <option value="bronze">Bronze</option>
-          <option value="silver">Silver</option>
-          <option value="gold">Gold</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
         </select>
       </label>
 
@@ -84,65 +104,70 @@
   </section>
 
   <aside class="cards">
+
     <div class="card">
       <h3>NP Membership</h3>
-      <a href="#" onclick="openModal('npModal')">Learn More</a>
+      <a href="#" class="open-modal" data-modal="npModal">Learn More</a>
     </div>
 
     <div class="card">
       <h3>Bronze</h3>
-      <a href="#" onclick="openModal('bronzeModal')">Learn More</a>
+      <a href="#" class="open-modal" data-modal="bronzeModal">Learn More</a>
     </div>
 
     <div class="card">
       <h3>Silver</h3>
-      <a href="#" onclick="openModal('silverModal')">Learn More</a>
+      <a href="#" class="open-modal" data-modal="silverModal">Learn More</a>
     </div>
 
     <div class="card">
       <h3>Gold</h3>
-      <a href="#" onclick="openModal('goldModal')">Learn More</a>
+      <a href="#" class="open-modal" data-modal="goldModal">Learn More</a>
     </div>
+
   </aside>
 
 </main>
 
+<!-- MODALS -->
+
 <div id="npModal" class="modal">
   <div class="modal-content">
-    <span onclick="closeModal('npModal')">&times;</span>
+    <span class="close-modal" data-modal="npModal">&times;</span>
     <h2>NP Membership</h2>
-    <p>Free for nonprofits. Includes basic directory listing.</p>
+    <p>Free for nonprofits. Includes directory listing and community visibility.</p>
   </div>
 </div>
 
 <div id="bronzeModal" class="modal">
   <div class="modal-content">
-    <span onclick="closeModal('bronzeModal')">&times;</span>
-    <h2>Bronze</h2>
-    <p>Basic advertising + event access.</p>
+    <span class="close-modal" data-modal="bronzeModal">&times;</span>
+    <h2>Bronze Membership</h2>
+    <p>Basic advertising, event invitations, and networking opportunities.</p>
   </div>
 </div>
 
 <div id="silverModal" class="modal">
   <div class="modal-content">
-    <span onclick="closeModal('silverModal')">&times;</span>
-    <h2>Silver</h2>
-    <p>Training, discounts, and spotlight features.</p>
+    <span class="close-modal" data-modal="silverModal">&times;</span>
+    <h2>Silver Membership</h2>
+    <p>Training sessions, discounts, and featured promotions.</p>
   </div>
 </div>
 
 <div id="goldModal" class="modal">
   <div class="modal-content">
-    <span onclick="closeModal('goldModal')">&times;</span>
-    <h2>Gold</h2>
-    <p>Premium advertising, homepage spotlight, VIP events.</p>
+    <span class="close-modal" data-modal="goldModal">&times;</span>
+    <h2>Gold Membership</h2>
+    <p>Premium advertising, homepage spotlight, and VIP event access.</p>
   </div>
 </div>
 
 <footer>
-  <p>&copy; Chamber</p>
+  <p>&copy; 2026 Timbuktu Chamber of Commerce</p>
 </footer>
 
-<script src="./scripts/join.js"></script>
+<script src="./scripts/join.js" defer></script>
+
 </body>
 </html>
