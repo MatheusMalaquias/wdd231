@@ -1,25 +1,17 @@
-// TIMESTAMP
-document.addEventListener("DOMContentLoaded", () => {
-    const timestampField = document.getElementById("timestamp");
-    if (timestampField) {
-        timestampField.value = new Date().toISOString();
-    }
+const openButtons = document.querySelectorAll(".open-modal");
+const closeButtons = document.querySelectorAll(".close-modal");
+
+openButtons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    const modal = document.getElementById(button.dataset.modal);
+    modal.style.display = "flex";
+  });
 });
 
-// MODALS
-function openModal(id) {
-    document.getElementById(id).style.display = "block";
-}
-
-function closeModal(id) {
-    document.getElementById(id).style.display = "none";
-}
-
-// FECHAR AO CLICAR FORA
-window.onclick = function(event) {
-    document.querySelectorAll(".modal").forEach(modal => {
-        if (event.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-};
+closeButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const modal = document.getElementById(button.dataset.modal);
+    modal.style.display = "none";
+  });
+});
