@@ -93,3 +93,26 @@
     max-width: 400px;
     width: 90%;
 }
+
+.grid-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.grid-container div:nth-child(1) { grid-area: card1; }
+.grid-container div:nth-child(2) { grid-area: card2; }
+.grid-container div:nth-child(3) { grid-area: card3; }
+.grid-container div:nth-child(4) { grid-area: card4; }
+.grid-container div:nth-child(5) { grid-area: card5; }
+.grid-container div:nth-child(6) { grid-area: card6; }
+.grid-container div:nth-child(7) { grid-area: card7; }
+.grid-container div:nth-child(8) { grid-area: card8; }
