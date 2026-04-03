@@ -3,7 +3,7 @@ export const places = [
     name: "Halfeld Park",
     address: "Downtown, Juiz de Fora, MG",
     description: "A central park surrounded by historic buildings and cultural life.",
-    image: "park.webp"
+    image: "images/park.webp"
   },
   {
     name: "Mariano Procópio Museum",
