@@ -28,7 +28,7 @@
 
     /* GRID DISCOVER */
     .grid-container {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             "card1 card2"
             "card3 card4"
