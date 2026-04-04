@@ -116,3 +116,9 @@
 .grid-container div:nth-child(6) { grid-area: card6; }
 .grid-container div:nth-child(7) { grid-area: card7; }
 .grid-container div:nth-child(8) { grid-area: card8; }
+
+.grid-container div {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+}

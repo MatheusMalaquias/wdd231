@@ -1,22 +1,9 @@
-@media (min-width: 768px) {
+/* MEDIUM */
+@media (min-width: 641px) {
 
     nav ul {
         display: flex;
         gap: 2rem;
-    }
-
-    .home-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 1rem;
-    }
-
-    .spotlights {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     footer {
@@ -27,8 +14,8 @@
     }
 
     .join-container {
-    flex-direction: row;
-    align-items: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     .form-section {
@@ -39,22 +26,7 @@
         flex: 1;
     }
 
-    @media (min-width: 1025px) {
-    .grid-container {
-        grid-template-areas:
-            "card1 card2 card3"
-            "card4 card5 card6"
-            "card7 card8 card8";
-    }
-    }
-
-    .grid-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    }
-
-    @media (min-width: 641px) {
+    /* GRID DISCOVER */
     .grid-container {
         grid-template-areas:
             "card1 card2"
@@ -63,14 +35,17 @@
             "card7 card8";
     }
 
+    /* HOVER EFFECT */
     .grid-container img:hover {
         transform: scale(1.05);
         filter: brightness(1.2);
         transition: 0.3s;
     }
-    }
+}
 
-    @media (min-width: 1025px) {
+/* LARGE */
+@media (min-width: 1025px) {
+
     .grid-container {
         grid-template-areas:
             "card1 card2 card3"
@@ -78,4 +53,10 @@
             "card7 card8 card8";
     }
 }
+
+/* IMAGES (fora de media) */
+.grid-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
