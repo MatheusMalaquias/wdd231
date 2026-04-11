@@ -1,8 +1,12 @@
 const container = document.querySelector("#class-schedule-container");
 
+if (container) {
+    loadTools();
+}
+
 async function loadTools() {
     try {
-        const response = await fetch("data/tools.json"); // caminho do seu JSON
+        const response = await fetch("data/tools.json");
         const tools = await response.json();
 
         tools.forEach(tool => {
@@ -24,5 +28,3 @@ async function loadTools() {
         console.error("Erro ao carregar JSON:", error);
     }
 }
-
-loadTools();
