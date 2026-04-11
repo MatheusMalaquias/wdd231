@@ -14,12 +14,13 @@ async function loadTools() {
             card.classList.add("class-card");
 
             card.innerHTML = `
-                <img src="${tool.image}" alt="${tool.name}">
                 <h3>${tool.name}</h3>
-                <p><strong>Category:</strong> ${tool.category}</p>
-                <p><strong>Rating:</strong> ⭐ ${tool.rating}</p>
-                <p>${tool.description}</p>
             `;
+
+            // evento de clique
+            card.addEventListener("click", () => {
+                openModal(tool);
+            });
 
             container.appendChild(card);
         });
