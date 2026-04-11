@@ -1,8 +1,28 @@
-const btn = document.querySelector('#menuBtn');
-const menu = document.querySelector('#navMenu');
+const container = document.querySelector("#class-schedule-container");
 
-btn.addEventListener('click', () => {
-  menu.classList.toggle('open');
-});
+async function loadTools() {
+    try {
+        const response = await fetch("data/tools.json"); // caminho do seu JSON
+        const tools = await response.json();
 
-localStorage.setItem('visited', 'true');
+        tools.forEach(tool => {
+            const card = document.createElement("div");
+            card.classList.add("class-card");
+
+            card.innerHTML = `
+                <img src="${tool.image}" alt="${tool.name}">
+                <h3>${tool.name}</h3>
+                <p><strong>Category:</strong> ${tool.category}</p>
+                <p><strong>Rating:</strong> ⭐ ${tool.rating}</p>
+                <p>${tool.description}</p>
+            `;
+
+            container.appendChild(card);
+        });
+
+    } catch (error) {
+        console.error("Erro ao carregar JSON:", error);
+    }
+}
+
+loadTools();
